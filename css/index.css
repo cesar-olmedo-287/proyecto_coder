@@ -1,0 +1,273 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+/* estilo para el encabezado*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(63, 31, 8);
+    height: 90px;
+}
+header a img {
+    margin: 10px;
+    height: 70px;
+    width: auto;
+}
+header nav{
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+nav ul li a {
+    margin: 20px;
+    padding: 10px 20px;
+    color: red;
+}
+header ul li {
+    display: inline-block;
+}
+a:link{
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    background-color: transparent;
+    text-decoration: none;
+}
+/* estilo para el cuerpo de la pagina index*/
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: rgb(170, 241, 241);
+}
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+main p {
+    font-family: cursive;
+    font-size: medium;
+    text-align: center;
+    background-color: rgb(112, 96, 128);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px 10px;
+}
+.video {
+    margin: 10px 15%;
+    width: 853px;
+    height: 480px;
+}
+.titulo {
+    font-size: xx-large;
+    color: sienna;
+    text-align: center;
+}
+.imagenPrincipal {
+    width: 80%;
+}
+/*estilo para el pie de pagina*/
+footer {
+    background-color: rgb(4, 5, 46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+footer h2 {
+    font-style: italic;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: lawngreen;
+}
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+.redesSociales {
+    display: flex;
+    align-items: center;
+    color: rgb(105, 243, 86);
+}
+.logoRedesSociales {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+h3 {
+    font-size: 18px;
+}
+/*estilo para la pagina menu*/
+.menu {
+    display: grid;
+    grid-template-areas:
+    "tradicional desayuno"
+    "especial desayuno"
+    "torta desayuno"
+    "pasteleria pasteleria";
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tradicional{
+    grid-area: tradicional;
+    height: 100%;
+}
+.especial {
+    grid-area: especial;
+    height: 100%;
+}
+.torta{
+    grid-area: torta;
+    height: 100%;
+}
+.pasteleria{
+    grid-area: pasteleria;
+}
+.desayuno {
+    grid-area: desayuno;
+}
+table{
+    width: 100%;
+    border: 2px solid;
+    border-color: black;
+    background-color: darkkhaki;
+}
+td, th{
+    border-bottom: 1px solid;
+    border-color: blue;
+}
+tbody tr:hover{
+    background-color: salmon;
+}
+h4{
+    font-size: 16px;
+    text-indent: 30px;
+}
+td div{
+    text-indent: 30px;
+}
+td ul li{
+    list-style-type:square;
+    margin-left: 20px;
+}
+.precio{
+    text-align: center;
+}
+th{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*estilo pagina locales*/
+.locales {
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: baseline;
+}
+section{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+section img{
+    width: 100%;
+}
+address{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*estilo pagina galeria*/
+h1 {
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: blue;
+}
+.columnas{
+    display: flex;
+    gap: 10px;
+}
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+picture img{
+    width: 100%;
+    height: auto;
+    margin: 1.5%;
+}
+/*estilo pagina contacto*/
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+}
+input {
+    width: 250px;
+}
+textarea {
+    width: 250px;
+}
+@media screen and (max-width: 480px) {
+    /* responsive footer*/
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* responsive galeria*/
+    .columnas {
+        flex-direction: column;
+    }
+    /* responsive locales*/
+    .locales {
+        flex-direction: column; 
+    }
+    section {
+        width: 100%;
+    }
+    /* responsive menu*/
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    /* responsive index*/
+    .video {
+        margin: 10px 15%;
+        width: 95%;
+        height: auto;
+    }
+    /* responsive header*/
+    header ul li {
+        display:block;
+    }
+}
