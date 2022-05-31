@@ -7,7 +7,8 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color:rgb(63, 31, 8);
+    /* background-color:rgb(63, 31, 8); */
+    background: linear-gradient(to left, rgb(63, 31, 8) 50%, rgb(120, 78, 0) 60%, rgb(120, 30, 32) 75%);
     height: 90px;
 }
 header a img {
@@ -77,12 +78,21 @@ main p {
     height: 480px;
 }
 .titulo {
-    font-size: xx-large;
+    font-size: 50px;
     color: sienna;
     text-align: center;
+    padding: 10px;
+    transform: skewY(-5deg);
+}
+.titulo:hover {
+    font-size: 70px;
+    padding: 0px;
+    transition: all 0.3s ease-in-out;
 }
 .imagenPrincipal {
     width: 80%;
+    animation-name: slide;
+    animation-duration: 3s;
 }
 /*estilo para el pie de pagina*/
 footer {
@@ -98,6 +108,10 @@ footer h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: lawngreen;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
 }
 footer ul{
     display: flex;
@@ -189,6 +203,9 @@ th{
     gap: 10px;
     align-items: baseline;
 }
+.imgLocal2 {
+    transform: translateY(-25%);
+}
 section{
     display:flex;
     flex-direction: column;
@@ -269,5 +286,27 @@ textarea {
     /* responsive header*/
     header ul li {
         display:block;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translate(-100%,0);
+    }
+    25%{
+        transform: translate(60%,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes aparecer{
+    0%{
+        color: rgb(124, 252, 0, 0);
+    }
+    75%{
+        color: rgb(124, 252, 0, 50)
+    }
+    100%{
+        color: rgb(124, 252, 0, 100);
     }
 }
