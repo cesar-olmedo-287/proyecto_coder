@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/bootstrap.bundle.js"></script>
 </head>
 <body class="body_contacto">
     <!--encabezado-->
@@ -33,13 +35,19 @@
     </header>
     <!--formulario de comentarios-->
     <form action="../contacto.js" method="get">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre">
-        <label for="email">E-mail:</label>
-        <input type="email" name="email">
-        <label for="consulta">Consulta:</label>
-        <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-        <button type="submit">Enviar</button>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" name="email">
+        </div>        
+        <div class="mb-3">
+            <label for="consulta" class="form-label">Consulta:</label>
+            <textarea name="consulta" class="form-control" id="consulta" cols="30" rows="10"></textarea>
+        </div>      
+            <button type="submit">Enviar</button>
     </form>
     <footer><!--pie de pagina-->
         <h2>¡Síguenos en nuestras redes!</h2>

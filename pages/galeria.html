@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">  
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
     </header>
     <main>
         <h1 class="galeria">Galería</h1>
-        <picture class="columnas">
+        <!-- <picture class="columnas">
             <div class="columna">
                 <img src="../images/imagen1.jpg" alt="imagen1">
                 <img src="../images/imagen2.jpg" alt="imagen2">
@@ -60,7 +61,37 @@
                 <img src="../images/imagen18.jpg" alt="imagen18">
                 <img src="../images/imagen20.jpg" alt="imagen20">
             </div>
-        </picture>
+        </picture> -->
+        <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+            <picture class="carousel-inner">
+              <article class="carousel-item active">
+                <img src="../images/imagen1.jpg" class="d-block w-100" alt="imagen1">
+              </article>
+              <article class="carousel-item">
+                <img src="../images/imagen2.jpg" class="d-block w-100" alt="imagen2">
+              </article>
+              <article class="carousel-item">
+                <img src="../images/imagen3.jpg" class="d-block w-100" alt="imagen3">
+              </article>
+              <article class="carousel-item">
+                <img src="../images/imagen4.jpg" class="d-block w-100" alt="imagen4">
+              </article>
+              <article class="carousel-item">
+                <img src="../images/imagen5.jpg" class="d-block w-100" alt="imagen5">
+              </article>
+              <article class="carousel-item">
+                <img src="../images/imagen6.jpg" class="d-block w-100" alt="imagen6">
+              </article>
+            </picture>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
     <footer><!--pie de pagina-->
         <h2>¡Síguenos en nuestras redes!</h2>
@@ -84,5 +115,6 @@
             </li>
         </ul>
     </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

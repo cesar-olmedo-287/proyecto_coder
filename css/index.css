@@ -203,9 +203,9 @@ th{
     gap: 10px;
     align-items: baseline;
 }
-.imgLocal2 {
+/* .imgLocal2 {
     transform: translateY(-25%);
-}
+} */
 section{
     display:flex;
     flex-direction: column;
@@ -226,7 +226,7 @@ h1 {
     text-align: center;
     color: blue;
 }
-.columnas{
+/* .columnas{
     display: flex;
     gap: 10px;
 }
@@ -239,7 +239,7 @@ picture img{
     width: 100%;
     height: auto;
     margin: 1.5%;
-}
+} */
 /*estilo pagina contacto*/
 form{
     display:flex;
