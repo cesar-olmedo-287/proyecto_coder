@@ -8,10 +8,15 @@ header {
     display: flex;
     justify-content: space-between;
     /* background-color:rgb(63, 31, 8); */
-    background: linear-gradient(to left, rgb(63, 31, 8) 50%, rgb(120, 78, 0) 60%, rgb(120, 30, 32) 75%);
+    background: linear-gradient(to right, rgb(63, 31, 8) 50%, rgb(120, 78, 0) 60%, rgb(120, 30, 32) 75%);
     height: 90px;
 }
+header div{
+    display: flex;
+    justify-content: space-between;
+}
 header a img {
+    justify-self: end;
     margin: 10px;
     height: 70px;
     width: auto;
@@ -22,6 +27,9 @@ header nav{
     display: flex;
     justify-content:space-around;
     align-items: center;
+}
+.nav-link{
+    color: coral;
 }
 nav ul li a {
     margin: 20px;
@@ -254,6 +262,11 @@ input {
 textarea {
     width: 250px;
 }
+@media screen and (max-width: 767px) {
+    .nav-link{
+        color: black;
+    }
+}
 @media screen and (max-width: 480px) {
     /* responsive footer*/
     footer ul{
@@ -284,9 +297,9 @@ textarea {
         height: auto;
     }
     /* responsive header*/
-    header ul li {
+    /* header ul li {
         display:block;
-    }
+    } */
 }
 @keyframes slide{
     0%{
