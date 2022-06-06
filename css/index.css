@@ -31,11 +31,11 @@ header nav{
 .nav-link{
     color: coral;
 }
-nav ul li a {
+/* nav ul li a {
     margin: 20px;
     padding: 10px 20px;
     color: red;
-}
+} */
 header ul li {
     display: inline-block;
 }
@@ -211,6 +211,16 @@ th{
     gap: 10px;
     align-items: baseline;
 }
+div .MapaLocales{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.mapa{
+    height: 300px;
+}
+
 /* .imgLocal2 {
     transform: translateY(-25%);
 } */
@@ -220,7 +230,7 @@ section{
     width: 50%;
 }
 section img{
-    width: 100%;
+    width: 50%;
 }
 address{
     text-align: center;
@@ -234,6 +244,10 @@ h1 {
     text-align: center;
     color: blue;
 }
+#carouselExampleControls{
+    width: 50%;
+}
+
 /* .columnas{
     display: flex;
     gap: 10px;
@@ -263,8 +277,23 @@ textarea {
     width: 250px;
 }
 @media screen and (max-width: 767px) {
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    header {
+        background:rgb(120, 30, 32)
+    }
     .nav-link{
-        color: black;
+        color:red;
+    }
+    div .MapaLocales {
+        flex-direction: column; 
+    }
+    .mapa{
+        height: auto;
+    }
+    #carouselExampleControls{
+        width: 100%;
     }
 }
 @media screen and (max-width: 480px) {
@@ -279,9 +308,7 @@ textarea {
         flex-direction: column;
     }
     /* responsive locales*/
-    .locales {
-        flex-direction: column; 
-    }
+
     section {
         width: 100%;
     }
@@ -297,6 +324,7 @@ textarea {
         height: auto;
     }
     /* responsive header*/
+
     /* header ul li {
         display:block;
     } */
