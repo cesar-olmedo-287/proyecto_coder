@@ -1,0 +1,45 @@
+
+/* estilo para el encabezado*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left, rgb(63, 31, 8) 50%, rgb(120, 78, 0) 60%, rgb(120, 30, 32) 75%);
+    height: 90px;
+    & a img {
+        margin: 10px;
+        height: 70px;
+        width: auto;
+}
+    & nav{
+        font-size: 15px;
+        font-weight: bold;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        & ul li a {
+            margin: 20px;
+            padding: 10px 20px;
+            color: red;
+        }
+}
+    & ul li {
+        display: inline-block;
+}
+}
+a:link{
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    background-color: transparent;
+    text-decoration: none;
+}
