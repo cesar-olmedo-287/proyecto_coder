@@ -11,12 +11,12 @@
 }
 @keyframes aparecer{
     0%{
-        color: rgba(124, 252, 0, 0);
+        color: rgba(($light-logo), 0);
     }
     75%{
-        color: rgba(124, 252, 0, 50);
+        color: rgba(($light-logo), 50);
     }
     100%{
-        color: rgba(124, 252, 0, 100);
+        color: rgba(($light-logo), 100);
     }
 }

@@ -1,0 +1,43 @@
+body {
+    background-color: $light-blue;
+    min-height: 100%;
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-bottom: 90px;
+    position: relative;
+    z-index: -1;
+}
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+main p {
+    font-family:sans-serif;
+    font-size: medium;
+    text-align: center;
+    background-color: $light-logo;
+    color: $dark-blue;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px 10px;
+    border-color: $dark-blue;
+    border: solid 2px;
+}
+
+.imagenPrincipal {
+    width: auto;
+    height: 68vh;
+    animation-name: slide;
+    animation-duration: 3s;
+}
+@media screen and (max-width: 480px) {
+    .imagenPrincipal {
+        width: 100%;
+        height: auto;
+    }
+    body {
+        padding-bottom: 130px;
+    }
+}

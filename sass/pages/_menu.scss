@@ -1,0 +1,80 @@
+.menu {
+    display: grid;
+    grid-template-areas:
+    " tradicional especial"
+    "desayuno desayuno"
+    "torta torta"
+    "pasteleria pasteleria";
+    gap: 15px;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 15px;
+}
+table{
+    width: 100%;
+    border: 2px solid;
+    border-color: $dark-blue;
+    background-color: $light-logo;
+    & td:nth-child(1) {
+        width: 70vh;
+        text-align:left;
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+    & td:nth-child(2) {
+        width: 20vh;
+    }
+    & th:nth-child(1) {
+        width: 70vh;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.tradicional{
+    grid-area: tradicional;
+    height: 100%;
+}
+.especial {
+    grid-area: especial;
+    height: 100%;
+}
+.torta{
+    grid-area: torta;
+}
+.pasteleria{
+    grid-area: pasteleria;
+}
+.desayuno {
+    grid-area: desayuno;
+}
+.precio{
+    text-align: center;
+}
+th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: $dark-blue;
+    text-align: left;
+    border-bottom: 2px solid;
+    border-inline: 2px solid;
+    border-color: $dark-logo;
+}
+td {
+    border-bottom: 1px solid;
+    border-color: $dark-logo;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.list-items li{
+    list-style-type:"+ ";
+}
+tbody tr:hover{
+    background-color: $alternative;
+}
+@media screen and (max-width: 480px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+}

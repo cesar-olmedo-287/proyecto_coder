@@ -1,45 +1,40 @@
-
-/* estilo para el encabezado*/
+// estilo para el header //
 header {
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(to left, rgb(63, 31, 8) 50%, rgb(120, 78, 0) 60%, rgb(120, 30, 32) 75%);
-    height: 90px;
-    & a img {
-        margin: 10px;
-        height: 70px;
-        width: auto;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
 }
-    & nav{
-        font-size: 15px;
-        font-weight: bold;
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        & ul li a {
-            margin: 20px;
-            padding: 10px 20px;
-            color: red;
-        }
+.navbar{
+    background: linear-gradient(to left, ($dark-blue)0%, ($dark-logo) 75%);
 }
-    & ul li {
-        display: inline-block;
+.logo {
+    height: 70px;
 }
+.color-nav-link{
+    color: $light-logo;
+    &:link{
+        background-color: transparent;
+        text-decoration: none;
+        color: $light-logo;
+    }
+    &:visited {
+        background-color: transparent;
+        text-decoration: none;
+        color: $light-logo;
+    }
+    &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+        color: $light-logo;
+    }
+    &:active {
+        background-color: transparent;
+        text-decoration: none;
+        color: $light-logo;
+    }
 }
-a:link{
-    background-color: transparent;
-    text-decoration: none;
-}
-a:visited {
-    background-color: transparent;
-    text-decoration: none;
-}
-  
-a:hover {
-    background-color: transparent;
-    text-decoration: underline;
-}
-a:active {
-    background-color: transparent;
-    text-decoration: none;
+.color-dropdown-menu{
+    background-color: $light-logo;
 }

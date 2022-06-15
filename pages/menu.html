@@ -5,37 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/translated.css">
 </head>
 <body>
     <header><!--encabezado-->
-        <a href="../index.html"><img src="../images/logo.jpg" alt="Logo"></a>
-        <nav><!--menu de navegacion-->
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./menu.html">Menú</a>
-                </li>
-                <li>
-                    <a href="./locales.html">Locales</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">Galería</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo.jpg" alt="logo la esquina bar"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link color-nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-nav-link" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-nav-link" href="./locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle color-nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menú
+                            </a>
+                        <ul class="dropdown-menu color-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#tradicional">Cafetería Tradicional</a></li>
+                            <li><a class="dropdown-item" href="#especial">Cafetería Especial</a></li>
+                            <li><a class="dropdown-item" href="#desayunos">Desayuno/merienda</a></li>
+                            <li><a class="dropdown-item" href="#tortas">Promociones Tortas</a></li>
+                            <li><a class="dropdown-item" href="#pasteleria">Promociones Pastelería</a></li>
+                        </ul>
+                        </li>
+                            <li class="nav-item">
+                            <a class="nav-link color-nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="menu">
-        <table class="tradicional"><!--tabla del menu cafeteria tradicional-->
+        <table class="tradicional" id="tradicional"><!--tabla del menu cafeteria tradicional-->
             <thead>
                 <tr>
                     <th>Cafetería Tradicional</th>
-                    <th>Precio</th>
+                    <th class="precio">Precio</th>
                 </tr>
             </thead>
             <tbody>
@@ -72,11 +89,11 @@
                 </tr>
             </tbody>
         </table>
-        <table class="especial"><!--tabla menu cafeteria especial-->
+        <table class="especial" id="especial"><!--tabla menu cafeteria especial-->
             <thead>
                 <tr>
                     <th>Cafetería Especial</th>
-                    <th>Precio</th>
+                    <th class="precio">Precio</th>
                 </tr>
             </thead>
             <tbody>
@@ -114,11 +131,11 @@
                 </tr>
             </tbody>
         </table>
-        <table class="pasteleria"><!--tabla menu promos de pasteleria-->
+        <table class="pasteleria" id="pastelería"><!--tabla menu promos de pasteleria-->
             <thead>
                 <tr>
                     <th>Promos de Pastelería</th>
-                    <th>Precio</th>
+                    <th class="precio">Precio</th>
                 </tr>
             </thead>
             <tbody>
@@ -152,11 +169,11 @@
                 </tr>            
             </tbody>
         </table>
-        <table class="torta"><!--tabla promociones con torta + cafe con leche-->
+        <table class="torta" id="tortas"><!--tabla promociones con torta + cafe con leche-->
             <thead>
                 <tr>
                     <th>Promoción Porción de Torta + Café con Leche</th>
-                    <th>Precio</th>
+                    <th class="precio">Precio</th>
                 </tr>
             </thead>
             <tbody>
@@ -186,18 +203,18 @@
                 </tr>
             </tbody>
         </table>
-        <table class="desayuno"><!--tabla promociones desayunos/meriendas-->
+        <table class="desayuno" id="desayunos"><!--tabla promociones desayunos/meriendas-->
             <thead>
                 <tr>
                     <th>Promoción Desayuno/Merienda</th>
-                    <th>Precio</th>
+                    <th class="precio">Precio</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>
                         <h4>Saludable</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Infusión</li>
                             <li>Masitas de Cereal</li>
                             <li>Plato de Mix de Frutas de Estación</li>
@@ -212,7 +229,7 @@
                 <tr>
                     <td>
                         <h4>Tradicional</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Infusión</li>
                             <li>2 Medialunas</li>
                             <li>Tostaditas</li>
@@ -225,7 +242,7 @@
                 <tr>
                     <td>
                         <h4>Liviano</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Infusión</li>
                             <li>Tostadas Integrales</li>
                             <li>Masitas Integrales</li>
@@ -239,7 +256,7 @@
                 <tr>
                     <td>
                         <h4>Tostados</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Infusión</li>
                             <li>Tostado de Jamón y Queso</li>
                         </ul>
@@ -249,7 +266,7 @@
                 <tr>
                     <td>
                         <h4>Tradicional</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Infusión</li>
                             <li>2 Medialunas</li>
                             <li>Jugo Exprimido</li>
@@ -260,7 +277,7 @@
                 <tr>
                     <td>
                         <h4>Americano</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Infusión</li>
                             <li>Tostado de Jamón y Queso</li>
                             <li>Jugo Exprimido</li>
@@ -271,7 +288,7 @@
                 <tr>
                     <td>
                         <h4>Premium</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Infusión</li>
                             <li>Copa con base de miel, yogurt, cereales, granola y frutas frescas</li>
                             <li>Tostadas Varias</li>
@@ -284,7 +301,7 @@
                 <tr>
                     <td>
                         <h4>Inglés</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Infusión</li>
                             <li>Jugo Exprimido</li>
                             <li>2 Opciones de Pastelería (consultar opciones del día)</li>
@@ -295,7 +312,7 @@
                 <tr>
                     <td>
                         <h4>Nutritivo</h4>
-                        <ul>
+                        <ul class="list-items">
                             <li>Licuado Nutritivo</li>
                             <li>Tostadas Integrales untadas en Queso Crema con Frutas Frescas</li>
                             <li>Frutos Secos</li>
@@ -331,5 +348,6 @@
             </li>
         </ul>
     </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

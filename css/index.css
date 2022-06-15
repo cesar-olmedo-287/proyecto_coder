@@ -4,110 +4,106 @@
     list-style-type: none;
 }
 /* estilo para el encabezado*/
-header {
-    display: flex;
-    justify-content: space-between;
-    /* background-color:rgb(63, 31, 8); */
-    background: linear-gradient(to left, rgb(63, 31, 8) 50%, rgb(120, 78, 0) 60%, rgb(120, 30, 32) 75%);
-    height: 90px;
+header{
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
 }
-header a img {
-    margin: 10px;
+
+.navbar{
+     background: linear-gradient(to left, rgb(12, 29, 74) 20%, rgb(120, 30, 32) 75%);
+}
+.logo {
     height: 70px;
-    width: auto;
 }
-header nav{
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
+.color-nav-link{
+    color: rgb(250, 224, 184);
 }
-nav ul li a {
-    margin: 20px;
-    padding: 10px 20px;
-    color: red;
+.color-dropdown-menu{
+    background-color: rgb(250, 224, 184);
 }
-header ul li {
-    display: inline-block;
-}
-a:link{
+
+.color-nav-link:link{
     background-color: transparent;
     text-decoration: none;
+    color: rgb(250, 224, 184);
 }
-a:visited {
+.color-nav-link:visited {
     background-color: transparent;
     text-decoration: none;
+    color: rgb(250, 224, 184);
 }
   
-a:hover {
+.color-nav-link:hover {
     background-color: transparent;
     text-decoration: underline;
+    color: rgb(250, 224, 184);
 }
-a:active {
+.color-nav-link:active {
     background-color: transparent;
     text-decoration: none;
+    color: rgb(250, 224, 184);
 }
 /* estilo para el cuerpo de la pagina index*/
 body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    background-color: rgb(110, 180, 209);
+    min-height: 100%;
     min-height: 100vh;
-    background-color: rgb(170, 241, 241);
+    padding-top: 110px;
+    padding-bottom: 90px;
+    position: relative;
+    z-index: -1;
+    
+    /* -webkit-box-shadow: #000 0 7px 35px 0;
+    -moz-box-shadow: #000 0 7px 35px 0;
+    box-shadow: #000 0 7px 35px 0; */
 }
 .index {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
     gap: 20px;
-    margin-bottom: 20px;
 }
 main p {
-    font-family: cursive;
+    font-family:sans-serif;
     font-size: medium;
     text-align: center;
-    background-color: rgb(112, 96, 128);
-    margin-left: 50px;
-    margin-right: 50px;
+    background-color: rgb(250, 224, 184);
+    color: rgb(17, 29, 74);
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 20px 10px;
+    border-color: rgb(12, 29, 74);
+    border: solid 2px;
 }
-.video {
-    margin: 10px 15%;
-    width: 853px;
-    height: 480px;
-}
-.titulo {
-    font-size: 50px;
-    color: sienna;
-    text-align: center;
-    padding: 10px;
-    transform: skewY(-5deg);
-}
-.titulo:hover {
-    font-size: 70px;
-    padding: 0px;
-    transition: all 0.3s ease-in-out;
-}
+
 .imagenPrincipal {
-    width: 80%;
+    width: auto;
+    height: 68vh;
     animation-name: slide;
     animation-duration: 3s;
 }
 /*estilo para el pie de pagina*/
 footer {
-    background-color: rgb(4, 5, 46);
+    background-color: rgb(12, 29, 74);
+    position: fixed;
+    z-index: 1;
+	left: 0;
+	right: 0;
+	bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 footer h2 {
-    font-style: italic;
-    font: bold;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
     text-align: center;
-    color: lawngreen;
+    color: rgb(250, 224, 184);
     animation-name: aparecer;
     animation-duration: 3s;
     animation-delay: 0.5s;
@@ -115,37 +111,54 @@ footer h2 {
 }
 footer ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     width: 100%;
     align-items: center;
+    padding: 0%;
 }
 .redesSociales {
     display: flex;
     align-items: center;
-    color: rgb(105, 243, 86);
+    color: rgb(250, 224, 184);
 }
 .logoRedesSociales {
-    height: 30px;
-    width: 30px;
-    margin: 10px;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
 }
 h3 {
-    font-size: 18px;
+    font-size: 15px;
+    padding-top: 5px;
 }
 /*estilo para la pagina menu*/
 .menu {
     display: grid;
     grid-template-areas:
-    "tradicional desayuno"
-    "especial desayuno"
-    "torta desayuno"
+    " tradicional especial"
+    "desayuno desayuno"
+    "torta torta"
     "pasteleria pasteleria";
     gap: 15px;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
 }
+table td:nth-child(1) {
+    width: 70vh;
+    text-align:left;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+table th:nth-child(1) {
+    width: 70vh;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+table td:nth-child(2) {
+    width: 20vh;
+}
+
 .tradicional{
     grid-area: tradicional;
     height: 100%;
@@ -156,7 +169,6 @@ h3 {
 }
 .torta{
     grid-area: torta;
-    height: 100%;
 }
 .pasteleria{
     grid-area: pasteleria;
@@ -167,86 +179,71 @@ h3 {
 table{
     width: 100%;
     border: 2px solid;
-    border-color: black;
-    background-color: darkkhaki;
-}
-td, th{
-    border-bottom: 1px solid;
-    border-color: blue;
-}
-tbody tr:hover{
-    background-color: salmon;
-}
-h4{
-    font-size: 16px;
-    text-indent: 30px;
-}
-td div{
-    text-indent: 30px;
-}
-td ul li{
-    list-style-type:square;
-    margin-left: 20px;
+    border-color: rgb(12, 29, 74);
+    background-color: rgb(250, 224, 184);
 }
 .precio{
     text-align: center;
 }
 th{
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(12, 29, 74);
+    text-align: left;
+    border-bottom: 2px solid;
+    border-inline: 2px solid;
+    border-color: rgb(120, 30, 32);
+}
+td {
+    border-bottom: 1px solid;
+    border-color: rgb(120, 30, 32);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.list-items li{
+    list-style-type:"+ ";
+}
+tbody tr:hover{
+    background-color: rgb(127, 103, 91, 40%);
 }
 /*estilo pagina locales*/
 .locales {
     display: flex;
-    margin: 10px;
-    justify-content: space-evenly;
-    gap: 10px;
-    align-items: baseline;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 20px;
 }
-.imgLocal2 {
-    transform: translateY(-25%);
-}
-section{
-    display:flex;
+.columnas-locales {
+    display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
+    padding-bottom: 10px;
 }
-section img{
-    width: 100%;
-}
-address{
+address {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
     text-align: center;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    color: rgb(17, 29, 74)
+}
+.tamaño-mapa {
+    height: 400px;
 }
 /*estilo pagina galeria*/
-h1 {
-    font-size: 50px;
-    font-style: italic;
-    text-align: center;
-    color: blue;
-}
-.columnas{
+.galeria{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 10px;
 }
-.columna {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-picture img{
-    width: 100%;
-    height: auto;
-    margin: 1.5%;
-}
+
 /*estilo pagina contacto*/
 form{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
-    gap: 15px;
+    margin: 10px;
+    gap: 5px;
 }
 input {
     width: 250px;
@@ -267,25 +264,28 @@ textarea {
     }
     /* responsive locales*/
     .locales {
-        flex-direction: column; 
+        flex-direction: column;
+        gap: 5px;
     }
-    section {
-        width: 100%;
+    .columnas-locales {
+        width: 90%;
     }
+    .tamaño-mapa {
+        height: 200px;
+    }
+
     /* responsive menu*/
     .menu {
         display: flex;
         flex-direction: column;
     }
     /* responsive index*/
-    .video {
-        margin: 10px 15%;
-        width: 95%;
+    .imagenPrincipal {
+        width: 100%;
         height: auto;
     }
-    /* responsive header*/
-    header ul li {
-        display:block;
+    body {
+        padding-bottom: 130px;
     }
 }
 @keyframes slide{
@@ -301,12 +301,12 @@ textarea {
 }
 @keyframes aparecer{
     0%{
-        color: rgb(124, 252, 0, 0);
+        color: rgb(250, 224, 184, 0);
     }
     75%{
-        color: rgb(124, 252, 0, 50)
+        color: rgb(250, 224, 184, 50)
     }
     100%{
-        color: rgb(124, 252, 0, 100);
+        color: rgb(250, 224, 184, 100);
     }
 }

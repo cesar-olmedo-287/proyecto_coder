@@ -1,0 +1,34 @@
+.locales {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.columnas-locales {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-bottom: 10px;
+}
+address {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+    color: $dark-blue;
+}
+.tamaño-mapa {
+    height: 400px;
+}
+@media screen and (max-width: 480px) {
+    .locales {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .columnas-locales {
+        width: 90%;
+    }
+    .tamaño-mapa {
+        height: 200px;
+    }
+}
