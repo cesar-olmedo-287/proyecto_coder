@@ -35,22 +35,12 @@ header {
 
 .color-nav-link {
   color: #FAE0B8; }
-  .color-nav-link:link {
-    background-color: transparent;
-    text-decoration: none;
-    color: #FAE0B8; }
-  .color-nav-link:visited {
+  .color-nav-link:link, .color-nav-link:visited, .color-nav-link:hover, .color-nav-link:active {
     background-color: transparent;
     text-decoration: none;
     color: #FAE0B8; }
   .color-nav-link:hover {
-    background-color: transparent;
-    text-decoration: underline;
-    color: #FAE0B8; }
-  .color-nav-link:active {
-    background-color: transparent;
-    text-decoration: none;
-    color: #FAE0B8; }
+    text-decoration: underline; }
 
 .color-dropdown-menu {
   background-color: #FAE0B8; }
@@ -78,20 +68,25 @@ footer {
     animation-iteration-count: infinite; }
   footer ul {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
     align-items: center;
+    width: 100%;
     padding: 0%; }
 
 .redesSociales {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   color: #FAE0B8; }
 
 .logoRedesSociales {
   height: 15px;
   width: 15px;
-  margin: 5px; }
+  margin: 5px;
+  background-color: #FAE0B8;
+  border: 1px solid #FAE0B8; }
 
 h3 {
   font-size: 15px;
@@ -101,6 +96,7 @@ h3 {
   footer ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center; } }
 
 body {
@@ -115,6 +111,7 @@ body {
 .index {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px; }
 
@@ -145,12 +142,15 @@ main p {
 
 .galeria {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px; }
 
 .locales {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   gap: 20px; }
@@ -250,11 +250,14 @@ tbody tr:hover {
 @media screen and (max-width: 480px) {
   .menu {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 10px;
   gap: 5px; }

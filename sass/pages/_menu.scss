@@ -74,7 +74,6 @@ tbody tr:hover{
 }
 @media screen and (max-width: 480px) {
     .menu {
-        display: flex;
-        flex-direction: column;
+        @include flex(column, center, center);
     }
 }

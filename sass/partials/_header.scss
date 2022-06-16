@@ -20,19 +20,14 @@ header {
         color: $light-logo;
     }
     &:visited {
-        background-color: transparent;
-        text-decoration: none;
-        color: $light-logo;
+        @extend .color-nav-link:link;
     }
     &:hover {
-        background-color: transparent;
+        @extend .color-nav-link:link;
         text-decoration: underline;
-        color: $light-logo;
     }
     &:active {
-        background-color: transparent;
-        text-decoration: none;
-        color: $light-logo;
+        @extend .color-nav-link:link;
     }
 }
 .color-dropdown-menu{
