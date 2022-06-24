@@ -22,13 +22,16 @@ table{
         padding-right: 20px;
     }
     & td:nth-child(2) {
-        width: 20vh;
+        width: 30vh;
     }
     & th:nth-child(1) {
         width: 70vh;
         text-align: left;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    &[id] {
+        scroll-margin-top: 110px;
     }
 }
 .tradicional{
@@ -54,17 +57,19 @@ table{
 th{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    color: $dark-blue;
+    color: $light-logo;
+    background-color: $dark-logo;
     text-align: left;
     border-bottom: 2px solid;
     border-inline: 2px solid;
-    border-color: $dark-logo;
+    border-color: $dark-blue;
 }
 td {
     border-bottom: 1px solid;
     border-color: $dark-logo;
     font-family: sans-serif;
     font-size: 20px;
+    padding-top: 10px;
 }
 .list-items li{
     list-style-type:"+ ";
@@ -72,6 +77,9 @@ td {
 tbody tr:hover{
     background-color: $alternative;
 }
+// .firstrow {
+//     padding-top: 10px;
+// }
 @media screen and (max-width: 480px) {
     .menu {
         @include flex(column, center, center);
