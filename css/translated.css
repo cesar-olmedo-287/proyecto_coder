@@ -133,6 +133,8 @@ main p {
   height: 68vh;
   animation-name: slide;
   animation-duration: 3s; }
+  .imagenPrincipal:hover {
+    box-shadow: none; }
 
 @media screen and (max-width: 480px) {
   .imagenPrincipal {
@@ -148,6 +150,9 @@ main p {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px; }
+
+img:hover {
+  box-shadow: 5px 5px 20px 10px #7F675B; }
 
 .locales {
   display: flex;
@@ -259,6 +264,62 @@ tbody tr:hover {
     justify-content: center;
     align-items: center; } }
 
+.main-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.section-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAE0B8;
+  max-width: 40%; }
+
+.p-contacto {
+  background-color: #FAE0B8;
+  text-align: justify;
+  font-size: large;
+  border: 0ch;
+  margin: 0%; }
+
+.span-contacto {
+  color: #781E20;
+  font-size: 30px;
+  background-color: #FAE0B8; }
+
+h1 {
+  background-color: #781E20;
+  color: #FAE0B8;
+  font-size: xx-large;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  text-decoration: overline; }
+
+.h2-contacto {
+  color: #FAE0B8;
+  background-color: #7F675B;
+  text-align: center;
+  font-size: small;
+  padding: 10px; }
+
+.div-horarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch; }
+
+.horario {
+  font-size: small;
+  text-align: center;
+  width: 200px;
+  padding-bottom: 10px; }
+
 form {
   display: flex;
   flex-direction: column;
@@ -272,3 +333,14 @@ input {
 
 textarea {
   width: 250px; }
+
+@media screen and (max-width: 480px) {
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .section-contacto {
+    max-width: 90%; }
+  .span-contacto {
+    font-size: 20px; } }

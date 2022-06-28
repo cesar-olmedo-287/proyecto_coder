@@ -12,7 +12,7 @@
 </head>
 <body class="body_contacto">
     <!--encabezado-->
-    <header><!--encabezado-->
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo.jpg" alt="logo la esquina bar"></a>
@@ -50,16 +50,36 @@
             </div>
         </nav>
     </header>
-    <!--formulario de comentarios-->
-    <form action="../contacto.js" method="get">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre">
-        <label for="email">E-mail:</label>
-        <input type="email" name="email">
-        <label for="consulta">Consulta:</label>
-        <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-        <button class="btn btn-dark" type="submit">Enviar</button>
-    </form>
+    <main class="main-contacto">
+        <!-- seccion horarios -->
+        <section class="section-contacto">
+            <p class="p-contacto">
+                <span class="span-contacto">
+                    Escribinos y contanos en qué podemos ayudarte
+                </span><br>
+                Nos estaremos poniendo en contacto con vos para ayudarte en lo que necesites.
+            </p>
+            <h1>HORARIOS</h1>
+            <div class="div-horarios">
+                <h2 class="h2-contacto">LUNES A SÁBADOS</h2>
+                <span class="span-contacto horario">7:30 a 20:30 hs.</span>
+            </div>
+            <div class="div-horarios">
+                <h2 class="h2-contacto">DOMINGOS</h2>
+                <span class="span-contacto horario">8:00 a 20:00 hs.</span>
+            </div>
+        </section>
+        <!--formulario de comentarios-->
+        <form action="../contacto.js" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email">
+            <label for="consulta">Consulta:</label>
+            <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+            <button class="btn btn-dark" type="submit">Enviar</button>
+        </form>
+    </main>
     <footer><!--pie de pagina-->
         <h2>¡Síguenos en nuestras redes!</h2>
         <ul>

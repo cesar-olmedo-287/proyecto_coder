@@ -77,9 +77,6 @@ td {
 tbody tr:hover{
     background-color: $alternative;
 }
-// .firstrow {
-//     padding-top: 10px;
-// }
 @media screen and (max-width: 480px) {
     .menu {
         @include flex(column, center, center);

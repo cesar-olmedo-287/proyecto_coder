@@ -1,3 +1,50 @@
+.main-contacto {
+    @include flex(row, space-evenly, center);
+}
+.section-contacto {
+    @include flex(column, space-between, center);
+    background-color: $light-logo;
+    max-width: 40%;
+}
+.p-contacto {
+    background-color: $light-logo;
+    text-align: justify;
+    font-size: large;
+    border: 0ch;
+    margin: 0%;
+}
+.span-contacto {
+    color: $dark-logo;
+    font-size: 30px;
+    background-color: $light-logo;
+}
+h1 {
+    background-color: $dark-logo;
+    color: $light-logo;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    text-decoration: overline;    
+}
+.h2-contacto {
+    color: $light-logo;
+    background-color: $alternative;
+    text-align: center;
+    font-size: small;
+    padding:10px;
+}
+.div-horarios{
+    @include flex(column, space-evenly, stretch);
+}
+.horario {
+    font-size: small;
+    text-align: center;
+    width: 200px;
+    padding-bottom: 10px;
+}
 form{
     @include flex(column, center, center);
     margin: 10px;
@@ -8,4 +55,15 @@ input {
 }
 textarea {
     width: 250px;
+}
+@media screen and (max-width: 480px) {
+    .main-contacto {
+        @include flex(column, space-evenly, center);
+    }
+    .section-contacto {
+        max-width: 90%;
+    }
+    .span-contacto {
+        font-size: 20px;
+    }
 }

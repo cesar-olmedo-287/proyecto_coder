@@ -29,6 +29,9 @@ main p {
     height: 68vh;
     animation-name: slide;
     animation-duration: 3s;
+    &:hover{
+        box-shadow: none;
+    }
 }
 @media screen and (max-width: 480px) {
     .imagenPrincipal {
